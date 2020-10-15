@@ -1,3 +1,6 @@
+added new features from a template repository.
+
+
 # RNWCShop
 React Native WooCommerce app with Typescript  
 Based on the tutorial on my Medium [post](https://medium.com/@iksena/building-an-ecommerce-mobile-app-with-react-native-and-woocommerce-a4f5b3a1e434).  
