@@ -96,20 +96,22 @@ const _renderBrowseDetail = ({
         // @ts-ignore
         style={styles.rating}
       />
-      <Button
-        icon={{
-          name: 'cart-plus',
-          type: 'font-awesome-5',
-          color: 'white',
-          size: 16
-        }}
-        onPress={(): void => addToCart(product)}
-      />
+      {/*<Button*/}
+      {/*  icon={{*/}
+      {/*    name: 'cart-plus',*/}
+      {/*    type: 'font-awesome-5',*/}
+      {/*    color: 'white',*/}
+      {/*    size: 16*/}
+      {/*  }}*/}
+      {/*  onPress={(): void => addToCart(product)}*/}
+      {/*/>*/}
     </View>
   </>
 );
 
 const ProductItem = (props: Props): JSX.Element => {
+  console.log(props)
+
   const {
     product: {
       id,
@@ -120,9 +122,11 @@ const ProductItem = (props: Props): JSX.Element => {
     handleProductPress,
     isInCart = false
   } = props;
-
+  console.log(price)
   return (
     <TouchableOpacity onPress={(): void => handleProductPress(id)}>
+{/* need to update this card prop to newer syntax */}
+
       <Card
         title={name}
         // @ts-ignore

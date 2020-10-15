@@ -39,7 +39,7 @@ const DetailContainer = ({ navigation }: Props): JSX.Element => {
   };
 
   useEffect(() => {
-    WooCommerce.get(`/products/${route.params.id}`).then(({ data }) => {
+    WooCommerce.get(`/products/${route.params.id}?`).then(({ data }) => {
       setProduct(data);
     });
   }, [route.params.id]);

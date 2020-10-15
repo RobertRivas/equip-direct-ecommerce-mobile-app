@@ -11,6 +11,8 @@ import {
   View,
   ViewStyle
 } from 'react-native';
+
+import {Picker} from '@react-native-community/picker';
 import ImageViewer from 'react-native-image-zoom-viewer';
 import Carousel, {
   CarouselStatic,
@@ -48,32 +50,32 @@ class DetailComponent extends PureComponent<Props> {
   };
 
   _mapImages = (images: Array<Image>) =>
-    images.map((image: Image) => ({ url: image.src }));
+      images.map((image: Image) => ({ url: image.src }));
 
   _renderImageItem = (handleShowImages: () => void) => (
-    { item }: { item: { url: string } },
-    parallaxProps: ParallaxImageProps
+      { item }: { item: { url: string } },
+      parallaxProps: ParallaxImageProps
   ): JSX.Element => (
-    <TouchableOpacity style={styles.item} onPress={handleShowImages}>
-      <ParallaxImage
-        {...parallaxProps}
-        source={{ uri: item.url }}
-        containerStyle={styles.imageContainer}
-        style={styles.image}
-      />
-    </TouchableOpacity>
+      <TouchableOpacity style={styles.item} onPress={handleShowImages}>
+        <ParallaxImage
+            {...parallaxProps}
+            source={{ uri: item.url }}
+            containerStyle={styles.imageContainer}
+            style={styles.image}
+        />
+      </TouchableOpacity>
   );
 
   _renderImages = (
-    images: Array<Image>,
-    handleShowImages: () => void
+      images: Array<Image>,
+      handleShowImages: () => void
   ): JSX.Element => (
-    <ImageViewer
-      imageUrls={this._mapImages(images)}
-      enableSwipeDown
-      onSwipeDown={handleShowImages}
-      index={this.carousel?.currentIndex}
-    />
+      <ImageViewer
+          imageUrls={this._mapImages(images)}
+          enableSwipeDown
+          onSwipeDown={handleShowImages}
+          index={this.carousel?.currentIndex}
+      />
   );
 
   render(): JSX.Element {
@@ -92,40 +94,46 @@ class DetailComponent extends PureComponent<Props> {
     } = product;
 
     return (
-      <ScrollView style={styles.wrapper}>
-        <Carousel
-          ref={this._setCarousel}
-          sliderWidth={screenWidth}
-          sliderHeight={screenWidth}
-          itemWidth={screenWidth - 60}
-          data={this._mapImages(images)}
-          renderItem={this._renderImageItem(handleShowImages)}
-          hasParallaxImages
-        />
-        <View style={styles.detail}>
-          <Text style={styles.textTitle}>{name}</Text>
-          <Text style={styles.textPrice}>{toAmount(price)}</Text>
-          <HTML html={description} textSelectable />
-          <View style={styles.rating}>
-            <Text style={styles.textSubHeading}>Rating:</Text>
-            <Text style={styles.textRating}>{rating}</Text>
-            <Rating readonly imageSize={20} startingValue={Number(rating)} />
-          </View>
-          <Button
-            icon={{
-              name: 'cart-plus',
-              type: 'font-awesome-5',
-              color: 'white',
-              size: 16
-            }}
-            title="Add to cart"
-            onPress={(): void => addToCart(product)}
+        <ScrollView style={styles.wrapper}>
+          <Carousel
+              ref={this._setCarousel}
+              sliderWidth={screenWidth}
+              sliderHeight={screenWidth}
+              itemWidth={screenWidth - 60}
+              data={this._mapImages(images)}
+              renderItem={this._renderImageItem(handleShowImages)}
+              hasParallaxImages
           />
-        </View>
-        <Modal visible={imagesShown} transparent>
-          {this._renderImages(images, handleShowImages)}
-        </Modal>
-      </ScrollView>
+          <View style={styles.detail}>
+            <Text style={styles.textTitle}>{name}</Text>
+            <Text style={styles.textPrice}>{toAmount(price)}</Text>
+              <Picker style={{width:100}}>
+                <Picker.Item label={'1'} value={'1'}></Picker.Item>
+                <Picker.Item label={'2'} value={'2'}></Picker.Item>
+                <Picker.Item label={'3'} value={'3'}></Picker.Item>
+                <Picker.Item label={'4'} value={'4'}></Picker.Item>
+            </Picker>
+            <HTML html={description} textSelectable />
+            <View style={styles.rating}>
+              <Text style={styles.textSubHeading}>Rating:</Text>
+              <Text style={styles.textRating}>{rating}</Text>
+              <Rating readonly imageSize={20} startingValue={Number(rating)} />
+            </View>
+            <Button
+                icon={{
+                  name: 'cart-plus',
+                  type: 'font-awesome-5',
+                  color: 'white',
+                  size: 16
+                }}
+                title="Add to cart"
+                onPress={(): void => addToCart(product)}
+            />
+          </View>
+          <Modal visible={imagesShown} transparent>
+            {this._renderImages(images, handleShowImages)}
+          </Modal>
+        </ScrollView>
     );
   }
 }

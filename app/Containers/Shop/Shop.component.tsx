@@ -1,5 +1,9 @@
 import React from 'react';
-import { FlatList, StyleSheet, Text, TextStyle, ViewStyle } from 'react-native';
+import { FlatList, StyleSheet, Text, TextStyle, ViewStyle, Button } from 'react-native';
+
+// import { createDrawerNavigator } from '@react-navigation/drawer';
+//
+// const Drawer = createDrawerNavigator();
 
 import ProductItem, {
   Product
@@ -10,15 +14,24 @@ interface Props {
   handleProductPress: (id: number) => void;
 }
 
+
+
 const _renderProduct = (props: Props) => ({
   item
 }: {
   item: Product;
-}): JSX.Element => <ProductItem {...props} product={item} isInCart={false} />;
 
+}):
+
+    JSX.Element => <ProductItem {...props} product={item} isInCart={false} />;
+console.log(ProductItem)
 const _renderEmpty = (): JSX.Element => (
   <Text style={styles.textEmpty}>No available product at the moment</Text>
+
 );
+
+
+
 
 const Shop = (props: Props): JSX.Element => {
   const { products } = props;
@@ -34,7 +47,7 @@ const Shop = (props: Props): JSX.Element => {
     />
   );
 };
-
+console.log(Shop)
 interface Styles {
   container: ViewStyle;
   textEmpty: TextStyle;
