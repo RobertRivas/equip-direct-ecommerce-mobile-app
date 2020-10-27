@@ -18,7 +18,7 @@ import {
 
 
 import ShopContainer from '../Containers/Shop/Shop.container';
-import CategoriesContainer from '../Containers/categoryDisplay/Categories.container';
+// import CategoriesContainer from '../Containers/categoryDisplay/Categories.container';
 import LibertyGlovesContainer from '../Containers/LibertyGloves/LibertyGloves.container';
 import SafetyGlassesContainer from '../Containers/SafetyGlasses/SafetyGlasses.container';
 import SafetyVestsContainer from "../Containers/SafetyVests/SafetyVests.container";
@@ -27,7 +27,10 @@ import HearingProtectionContainer from "../Containers/HearingProtection/HearingP
 import HardHatsContainer from '../Containers/HardHats/HardHats.container';
 import CartContainer from '../Containers/Cart/Cart.container';
 import DetailContainer from '../Containers/Detail/Detail.container';
+// import VariationDetailContainer from "../Containers/VariationDetail/VariationDetail.container";
 import CheckoutContainer from '../Containers/Checkout/Checkout.container';
+
+import {Picker} from '@react-native-community/picker';
 
 interface Props {
     navigation: StackNavigationProp<NavigationParams>;
@@ -44,6 +47,7 @@ export const routes = {
     HearingProtection: 'Hearing Protection',
     HardHats: 'Hard Hats',
   Detail: 'Detail',
+    // VariationDetail: 'VariationDetail',
   Orders: 'Orders',
   Cart: 'Cart',
   Checkout: 'Checkout'
@@ -62,6 +66,9 @@ export type NavigationParams = {
   Detail: {
     id: number;
   };
+  // VariationDetail:{
+  //   id: number;
+  // };
   Orders: {
     screen: string;
   };
@@ -76,7 +83,7 @@ export type NavigationParams = {
 
 
 const Stack = createStackNavigator();
-const Tab = createBottomTabNavigator();
+// const Tab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
 
 
@@ -103,7 +110,7 @@ const Browse = ({ navigation }:Props): JSX.Element => (
 
 const LibertyGloves = (): JSX.Element => (
   <Stack.Navigator initialRouteName={routes.LibertyGloves}>
-      <Stack.Screen name={routes.Categories} component={CategoriesContainer} />
+      {/*<Stack.Screen name={routes.Categories} component={CategoriesContainer} />*/}
       <Stack.Screen name={routes.LibertyGloves} component={LibertyGlovesContainer} />
   </Stack.Navigator>
 );

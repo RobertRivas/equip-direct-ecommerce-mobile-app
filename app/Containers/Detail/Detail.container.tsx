@@ -21,23 +21,29 @@ const DetailContainer = ({ navigation }: Props): JSX.Element => {
     price: 0,
     description: '',
     average_rating: '',
-    images: []
+    images: [],
+    variations:[],
   };
   const [product, setProduct] = useState<Product>(initialProduct);
   const [imagesShown, showImages] = useState(false);
+
+  // detail screen pops up first then api call is made for data.
   const route = useRoute<RouteProp<NavigationParams, 'Detail'>>();
   const dispatch = useDispatch();
 
   const handlers = {
     handleShowImages: (): void =>
       showImages((prevState: boolean) => !prevState),
+
+    // need
+    // handleVariationPress: (): void => navigation.navigate('Detail', { id }),
     addToCart: (product: Product): Action => {
       navigation.navigate('Orders', { screen: routes.Cart });
 
       return dispatch(actions.addToCart(product));
     }
   };
-
+  // this is api call for product detail data on detail screen.
   useEffect(() => {
     WooCommerce.get(`/products/${route.params.id}?`).then(({ data }) => {
       setProduct(data);

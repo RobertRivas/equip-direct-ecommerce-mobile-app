@@ -40,20 +40,16 @@ const ShopContainer = ({ navigation }: Props): JSX.Element => {
        dispatch(actions.subQuantity(productId))
    };
     useEffect(() => {
-        console.log(setProducts)
-        console.log(products)
+
      WooCommerce.get('/products?').then(({ data }) => {
        setProducts(data);
      });
-
-
   }, []);
-    console.log(setProducts)
-    console.log(products)
+
 
    return <Shop {...handlers} products={products} />;
 
 };
-console.log(Shop)
+
 
  export default ShopContainer;

@@ -85,12 +85,15 @@ class DetailComponent extends PureComponent<Props> {
       handleShowImages,
       addToCart = () => {}
     } = this.props;
+
+    // list of variations instantiated here
     const {
       name,
       images,
       description,
       price,
-      average_rating: rating
+      average_rating: rating,
+        variations
     } = product;
 
     return (
@@ -107,11 +110,15 @@ class DetailComponent extends PureComponent<Props> {
           <View style={styles.detail}>
             <Text style={styles.textTitle}>{name}</Text>
             <Text style={styles.textPrice}>{toAmount(price)}</Text>
-              <Picker style={{width:100}}>
-                <Picker.Item label={'1'} value={'1'}></Picker.Item>
-                <Picker.Item label={'2'} value={'2'}></Picker.Item>
-                <Picker.Item label={'3'} value={'3'}></Picker.Item>
-                <Picker.Item label={'4'} value={'4'}></Picker.Item>
+              <Picker style={{width:250}} mode={"dropdown"} >
+
+                {
+                  product.variations.map((item, index) => {
+                    return(<Picker.Item label={item.toString()} value={index} key={index} />)
+                      }
+                  )
+                }
+
             </Picker>
             <HTML html={description} textSelectable />
             <View style={styles.rating}>

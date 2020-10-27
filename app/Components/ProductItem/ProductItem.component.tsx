@@ -30,6 +30,8 @@ export interface Product {
   images: Array<Image>;
   description: string;
   average_rating: string;
+  // possibly change array type from number to object
+  variations: Array<number>;
 }
 
 export interface CartItem extends Product {
@@ -117,12 +119,15 @@ const ProductItem = (props: Props): JSX.Element => {
       id,
       name,
       images: [image],
-      price
+      price,
+        variations: [number],
     },
     handleProductPress,
     isInCart = false
   } = props;
   console.log(price)
+  console.log(props)
+  console.log(number)
   return (
     <TouchableOpacity onPress={(): void => handleProductPress(id)}>
 {/* need to update this card prop to newer syntax */}
