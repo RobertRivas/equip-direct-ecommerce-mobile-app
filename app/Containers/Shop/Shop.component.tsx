@@ -12,6 +12,7 @@ import ProductItem, {
 interface Props {
   products: Array<Product>;
   handleProductPress: (id: number) => void;
+  // variations: Array<Variation>;
 }
 
 

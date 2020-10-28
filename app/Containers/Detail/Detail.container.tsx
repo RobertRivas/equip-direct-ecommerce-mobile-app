@@ -34,9 +34,10 @@ const DetailContainer = ({ navigation }: Props): JSX.Element => {
   const handlers = {
     handleShowImages: (): void =>
       showImages((prevState: boolean) => !prevState),
+    handleProductPress: (id: number): void =>
+        navigation.navigate('Detail', { id }),
 
-    // need
-    // handleVariationPress: (): void => navigation.navigate('Detail', { id }),
+
     addToCart: (product: Product): Action => {
       navigation.navigate('Orders', { screen: routes.Cart });
 

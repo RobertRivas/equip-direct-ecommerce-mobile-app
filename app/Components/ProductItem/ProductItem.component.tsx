@@ -23,6 +23,8 @@ export interface Image {
   src: string;
 }
 
+
+
 export interface Product {
   id: number;
   name: string;
@@ -112,7 +114,7 @@ const _renderBrowseDetail = ({
 );
 
 const ProductItem = (props: Props): JSX.Element => {
-  console.log(props)
+
 
   const {
     product: {
@@ -120,16 +122,19 @@ const ProductItem = (props: Props): JSX.Element => {
       name,
       images: [image],
       price,
-        variations: [number],
+        variations: [variation],
     },
     handleProductPress,
     isInCart = false
   } = props;
   console.log(price)
   console.log(props)
-  console.log(number)
+  console.log(variation)
   return (
+
+      /// the function handleProductPress("103211") calls specific product using the products id
     <TouchableOpacity onPress={(): void => handleProductPress(id)}>
+      {/*<TouchableOpacity onPress={(): void => handleProductPress("103211")}>*/}
 {/* need to update this card prop to newer syntax */}
 
       <Card

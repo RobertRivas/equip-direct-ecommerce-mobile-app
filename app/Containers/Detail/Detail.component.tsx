@@ -22,7 +22,7 @@ import Carousel, {
 import HTML from 'react-native-render-html';
 import { Rating, Button } from 'react-native-elements';
 
-import {
+import ProductItem, {
   Image,
   Product
 } from '../../Components/ProductItem/ProductItem.component';
@@ -35,7 +35,11 @@ interface Props {
   handleShowImages: () => void;
   imagesShown: boolean;
   addToCart?: (product: Product) => void;
+  handleProductPress: (id: number) => void;
+
 }
+
+
 
 class DetailComponent extends PureComponent<Props> {
   private carousel: CarouselStatic<object> | null;
@@ -82,7 +86,9 @@ class DetailComponent extends PureComponent<Props> {
     const {
       product,
       imagesShown,
+      handleProductPress,
       handleShowImages,
+
       addToCart = () => {}
     } = this.props;
 
@@ -110,11 +116,26 @@ class DetailComponent extends PureComponent<Props> {
           <View style={styles.detail}>
             <Text style={styles.textTitle}>{name}</Text>
             <Text style={styles.textPrice}>{toAmount(price)}</Text>
-              <Picker style={{width:250}} mode={"dropdown"} >
+
+            {/*need to  call handle product press to navigate to detail of variation the variation json object is same as product json object. */}
+              <Picker style={{width:250}} mode={"dropdown"} onValueChange={(): void => handleProductPress("103211")}>
+
+                <Picker.Item color={"blue"} label={"Item Variations/Sizes"} value={""}/>
+
+                {console.log(product.variations)}
+                {console.log()}
 
                 {
                   product.variations.map((item, index) => {
-                    return(<Picker.Item label={item.toString()} value={index} key={index} />)
+                    console.log(item)
+                    console.log(index)
+                    return(
+
+                        <Picker.Item label={item.toString()} value={index} key={index} />
+
+
+
+                        )
                       }
                   )
                 }
