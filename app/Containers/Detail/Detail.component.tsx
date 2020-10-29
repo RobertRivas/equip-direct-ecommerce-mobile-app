@@ -89,6 +89,8 @@ class DetailComponent extends PureComponent<Props> {
       handleProductPress,
       handleShowImages,
 
+
+
       addToCart = () => {}
     } = this.props;
 
@@ -99,7 +101,8 @@ class DetailComponent extends PureComponent<Props> {
       description,
       price,
       average_rating: rating,
-        variations
+        variations,
+        sku
     } = product;
 
     return (
@@ -116,24 +119,29 @@ class DetailComponent extends PureComponent<Props> {
           <View style={styles.detail}>
             <Text style={styles.textTitle}>{name}</Text>
             <Text style={styles.textPrice}>{toAmount(price)}</Text>
-
+            <Text style={styles.textPrice}>{sku}</Text>
             {/*need to  call handle product press to navigate to detail of variation the variation json object is same as product json object. */}
-              <Picker style={{width:250}} mode={"dropdown"} onValueChange={(): void => handleProductPress("103211")}>
 
+            <Picker style={{width:250}} mode={"dropdown"} onValueChange={(itemValue): void => handleProductPress(parseFloat(itemValue.toString()))}>
+
+            {/*  <Picker style={{width:250}} mode={"dropdown"} onValueChange={(itemValue,itemIndex): void => handleProductPress(parseInt(itemValue.toString()))}>*/}
+
+            {/*<Picker style={{width:250}} mode={"dropdown"} selectedValue={(): void => handleProductPress("103211")}>*/}
                 <Picker.Item color={"blue"} label={"Item Variations/Sizes"} value={""}/>
 
                 {console.log(product.variations)}
                 {console.log()}
 
+
                 {
                   product.variations.map((item, index) => {
                     console.log(item)
                     console.log(index)
+                    console.log(sku)
+
                     return(
 
-                        <Picker.Item label={item.toString()} value={index} key={index} />
-
-
+                        <Picker.Item label={item.toString()} value={item} key={index} />
 
                         )
                       }

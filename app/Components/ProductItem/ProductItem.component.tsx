@@ -34,6 +34,7 @@ export interface Product {
   average_rating: string;
   // possibly change array type from number to object
   variations: Array<number>;
+  sku: string;
 }
 
 export interface CartItem extends Product {
@@ -123,6 +124,7 @@ const ProductItem = (props: Props): JSX.Element => {
       images: [image],
       price,
         variations: [variation],
+        sku,
     },
     handleProductPress,
     isInCart = false
@@ -130,6 +132,7 @@ const ProductItem = (props: Props): JSX.Element => {
   console.log(price)
   console.log(props)
   console.log(variation)
+  console.log(sku)
   return (
 
       /// the function handleProductPress("103211") calls specific product using the products id
