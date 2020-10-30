@@ -129,7 +129,7 @@ class DetailComponent extends PureComponent<Props> {
             {/*  <Picker style={{width:250}} mode={"dropdown"} onValueChange={(itemValue,itemIndex): void => handleProductPress(parseInt(itemValue.toString()))}>*/}
 
             {/*<Picker style={{width:250}} mode={"dropdown"} selectedValue={(): void => handleProductPress("103211")}>*/}
-                <Picker.Item color={"blue"} label={"Item Variations/Sizes"} value={""}/>
+                <Picker.Item color={"blue"} label={attributes[0].name.toString()} value={""}/>
               {console.log(product)}
                 {console.log(product.variations)}
               {console.log(attributes)}
@@ -146,7 +146,7 @@ class DetailComponent extends PureComponent<Props> {
 
                     return(
 
-                        <Picker.Item label={item.toString()} value={item} key={index} />
+                        <Picker.Item label={attributes[0].options[index].toString()} value={item} key={index} />
 
                         )
                       }
