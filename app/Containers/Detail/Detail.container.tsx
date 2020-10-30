@@ -23,6 +23,7 @@ const DetailContainer = ({ navigation }: Props): JSX.Element => {
     average_rating: '',
     images: [],
     variations:[],
+    attributes: [{id:0, name:'', position:0, visible:false, variation:false, options:[]}],
   };
   const [product, setProduct] = useState<Product>(initialProduct);
   const [imagesShown, showImages] = useState(false);

@@ -24,7 +24,8 @@ import { Rating, Button } from 'react-native-elements';
 
 import ProductItem, {
   Image,
-  Product
+  Product,
+    Attributes
 } from '../../Components/ProductItem/ProductItem.component';
 import { toAmount } from '../../Utils';
 
@@ -102,6 +103,7 @@ class DetailComponent extends PureComponent<Props> {
       price,
       average_rating: rating,
         variations,
+        attributes,
         sku
     } = product;
 
@@ -128,10 +130,13 @@ class DetailComponent extends PureComponent<Props> {
 
             {/*<Picker style={{width:250}} mode={"dropdown"} selectedValue={(): void => handleProductPress("103211")}>*/}
                 <Picker.Item color={"blue"} label={"Item Variations/Sizes"} value={""}/>
-
+              {console.log(product)}
                 {console.log(product.variations)}
-                {console.log()}
-
+              {console.log(attributes)}
+              {console.log(attributes)}
+              {console.log(product.attributes)}
+              {console.log(attributes[0].options)}
+              {console.log(product.attributes[0].name)}
 
                 {
                   product.variations.map((item, index) => {

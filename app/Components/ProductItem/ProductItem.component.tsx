@@ -23,7 +23,15 @@ export interface Image {
   src: string;
 }
 
+export interface Attributes{
+  id: number;
+  name: string;
+  position: number;
+  visible: boolean;
+  variation: boolean;
+  options: Array<string>;
 
+}
 
 export interface Product {
   id: number;
@@ -34,6 +42,7 @@ export interface Product {
   average_rating: string;
   // possibly change array type from number to object
   variations: Array<number>;
+  attributes: Array<Attributes>;
   sku: string;
 }
 
@@ -125,12 +134,13 @@ const ProductItem = (props: Props): JSX.Element => {
       price,
         variations: [variation],
         sku,
+        attributes: Attributes,
     },
     handleProductPress,
     isInCart = false
   } = props;
   console.log(price)
-  console.log(props)
+  console.log(Attributes)
   console.log(variation)
   console.log(sku)
   return (
