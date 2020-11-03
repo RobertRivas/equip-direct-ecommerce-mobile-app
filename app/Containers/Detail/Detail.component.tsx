@@ -27,16 +27,20 @@ import ProductItem, {
   Product,
     Attributes
 } from '../../Components/ProductItem/ProductItem.component';
+
+import VariationItem, {VariationImage, Variation} from "../../Components/VariationItem/VariationItem.component";
 import { toAmount } from '../../Utils';
 
 const { width: screenWidth } = Dimensions.get('window');
 
 interface Props {
   product: Product;
+  variation: Variation;
   handleShowImages: () => void;
   imagesShown: boolean;
   addToCart?: (product: Product) => void;
   handleProductPress: (id: number) => void;
+  handleVariationPress: (id: number) => void;
 
 }
 
@@ -89,6 +93,7 @@ class DetailComponent extends PureComponent<Props> {
       imagesShown,
       handleProductPress,
       handleShowImages,
+      handleVariationPress,
 
 
 
@@ -124,7 +129,7 @@ class DetailComponent extends PureComponent<Props> {
             <Text style={styles.textPrice}>{sku}</Text>
             {/*need to  call handle product press to navigate to detail of variation the variation json object is same as product json object. */}
 
-            <Picker style={{width:250}} mode={"dropdown"} onValueChange={(itemValue): void => handleProductPress(parseFloat(itemValue.toString()))}>
+            <Picker style={{width:250}} mode={"dropdown"} onValueChange={(itemValue): void => handleVariationPress(parseFloat(itemValue.toString()))}>
 
             {/*  <Picker style={{width:250}} mode={"dropdown"} onValueChange={(itemValue,itemIndex): void => handleProductPress(parseInt(itemValue.toString()))}>*/}
 

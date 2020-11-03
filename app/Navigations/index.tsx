@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon, Button } from 'react-native-elements';
-import {createStackNavigator, StackNavigationProp} from '@react-navigation/stack';
+import {createStackNavigator, StackNavigationProp, HeaderBackButton } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
@@ -27,7 +27,7 @@ import HearingProtectionContainer from "../Containers/HearingProtection/HearingP
 import HardHatsContainer from '../Containers/HardHats/HardHats.container';
 import CartContainer from '../Containers/Cart/Cart.container';
 import DetailContainer from '../Containers/Detail/Detail.container';
-// import VariationDetailContainer from "../Containers/VariationDetail/VariationDetail.container";
+import VariationDetailContainer from "../Containers/VariationDetail/VariationDetail.container";
 import CheckoutContainer from '../Containers/Checkout/Checkout.container';
 
 import {Picker} from '@react-native-community/picker';
@@ -47,7 +47,7 @@ export const routes = {
     HearingProtection: 'Hearing Protection',
     HardHats: 'Hard Hats',
   Detail: 'Detail',
-    // VariationDetail: 'VariationDetail',
+    VariationDetail: 'VariationDetail',
   Orders: 'Orders',
   Cart: 'Cart',
   Checkout: 'Checkout'
@@ -66,9 +66,9 @@ export type NavigationParams = {
   Detail: {
     id: number;
   };
-  // VariationDetail:{
-  //   id: number;
-  // };
+  VariationDetail:{
+    id: number;
+  };
   Orders: {
     screen: string;
   };
@@ -102,49 +102,69 @@ const Browse = ({ navigation }:Props): JSX.Element => (
             />
         ),
     }} />
-    <Stack.Screen name={routes.Detail} component={DetailContainer} />
+    <Stack.Screen name={routes.Detail} component={DetailContainer}
+    options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
+      <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer}
+                    options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
+
   </Stack.Navigator>
 );
 
+const Detail =(): JSX.Element => (
+    <Stack.Navigator initialRouteName={routes.Detail} >
+        <Stack.Screen name={routes.Detail} component={DetailContainer}/>
 
+        </Stack.Navigator>
+);
 
-const LibertyGloves = (): JSX.Element => (
+const LibertyGloves = ({ navigation }:Props): JSX.Element => (
   <Stack.Navigator initialRouteName={routes.LibertyGloves}>
       {/*<Stack.Screen name={routes.Categories} component={CategoriesContainer} />*/}
       <Stack.Screen name={routes.LibertyGloves} component={LibertyGlovesContainer} />
+      <Stack.Screen name={routes.Detail} component={DetailContainer}
+                    options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
   </Stack.Navigator>
 );
 
-const SafetyGlasses = (): JSX.Element => (
+const SafetyGlasses = ({ navigation }:Props): JSX.Element => (
     <Stack.Navigator initialRouteName={routes.SafetyGlasses}>
         <Stack.Screen name={routes.SafetyGlasses} component={SafetyGlassesContainer} />
+        <Stack.Screen name={routes.Detail} component={DetailContainer}
+                      options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
 
     </Stack.Navigator>
 );
 
-const SafetyVests = (): JSX.Element => (
+const SafetyVests = ({ navigation }:Props): JSX.Element => (
     <Stack.Navigator initialRouteName={routes.SafetyVests}>
         <Stack.Screen name={routes.SafetyVests} component={SafetyVestsContainer} />
+        <Stack.Screen name={routes.Detail} component={DetailContainer}
+                      options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
 
     </Stack.Navigator>
 );
 
-const FallProtection = (): JSX.Element => (
+const FallProtection = ({ navigation }:Props): JSX.Element => (
   <Stack.Navigator initialRouteName={routes.FallProtection} >
       <Stack.Screen name={routes.FallProtection} component={FallProtectionContainer} />
+      <Stack.Screen name={routes.Detail} component={DetailContainer}/>
 
   </Stack.Navigator>
 );
 
-const HearingProtection = (): JSX.Element => (
+const HearingProtection = ({ navigation }:Props): JSX.Element => (
   <Stack.Navigator initialRouteName={routes.HearingProtection} >
       <Stack.Screen name={routes.HearingProtection} component={HearingProtectionContainer} />
+      <Stack.Screen name={routes.Detail} component={DetailContainer}
+                    options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
   </Stack.Navigator>
 );
 
-const HardHats = (): JSX.Element => (
+const HardHats = ({ navigation }:Props): JSX.Element => (
   <Stack.Navigator initialRouteName={routes.HardHats}  >
       <Stack.Screen name={routes.HardHats} component={HardHatsContainer} />
+      <Stack.Screen name={routes.Detail} component={DetailContainer}
+                    options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
 
   </Stack.Navigator>
 );

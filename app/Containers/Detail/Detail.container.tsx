@@ -21,6 +21,7 @@ const DetailContainer = ({ navigation }: Props): JSX.Element => {
     price: 0,
     description: '',
     average_rating: '',
+    sku: '',
     images: [],
     variations:[],
     attributes: [{id:0, name:'', position:0, visible:false, variation:false, options:[]}],
@@ -37,6 +38,8 @@ const DetailContainer = ({ navigation }: Props): JSX.Element => {
       showImages((prevState: boolean) => !prevState),
     handleProductPress: (id: number): void =>
         navigation.navigate('Detail', { id }),
+    handleVariationPress: (id: number): void =>
+        navigation.navigate('VariationDetail', { id }),
 
 
     addToCart: (product: Product): Action => {
