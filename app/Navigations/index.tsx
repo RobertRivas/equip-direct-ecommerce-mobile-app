@@ -93,12 +93,22 @@ const Browse = ({ navigation }:Props): JSX.Element => (
     <Stack.Screen name={routes.Shop} component={ShopContainer} options={{
 
         headerLeft: () => (
-            <Button
+            <Button title={""}
+                    type={"clear"}
                 onPress={ () => navigation.dispatch(DrawerActions.openDrawer())}
+                icon={
+                    <Icon name={'bars'}
+                    size={35}
+                          type="font-awesome-5"
+                          color={"black"}
+                    />
+
+                }
 
 
-                title="NAV"
-                // color="#fff"
+
+
+
             />
         ),
     }} />
@@ -129,7 +139,30 @@ const Browse = ({ navigation }:Props): JSX.Element => (
 const LibertyGloves = ({ navigation }:Props): JSX.Element => (
   <Stack.Navigator initialRouteName={routes.LibertyGloves}>
       {/*<Stack.Screen name={routes.Categories} component={CategoriesContainer} />*/}
-      <Stack.Screen name={routes.LibertyGloves} component={LibertyGlovesContainer} />
+      <Stack.Screen name={routes.LibertyGloves} component={LibertyGlovesContainer}
+                    options={{
+
+                        headerLeft: () => (
+                            <Button title={""}
+                                    type={"clear"}
+                                    onPress={ () => navigation.dispatch(DrawerActions.openDrawer())}
+                                    icon={
+                                        <Icon name={'bars'}
+                                              size={35}
+                                              type="font-awesome-5"
+                                              color={"black"}
+                                        />
+
+                                    }
+
+
+
+
+
+                            />
+                        ),
+                    }}
+      />
       <Stack.Screen name={routes.Detail} component={DetailContainer} />
       <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer} />
   </Stack.Navigator>
@@ -137,7 +170,30 @@ const LibertyGloves = ({ navigation }:Props): JSX.Element => (
 
 const SafetyGlasses = ({ navigation }:Props): JSX.Element => (
     <Stack.Navigator initialRouteName={routes.SafetyGlasses}>
-        <Stack.Screen name={routes.SafetyGlasses} component={SafetyGlassesContainer} />
+        <Stack.Screen name={routes.SafetyGlasses} component={SafetyGlassesContainer}
+                      options={{
+
+                          headerLeft: () => (
+                              <Button title={""}
+                                      type={"clear"}
+                                      onPress={ () => navigation.dispatch(DrawerActions.openDrawer())}
+                                      icon={
+                                          <Icon name={'bars'}
+                                                size={35}
+                                                type="font-awesome-5"
+                                                color={"black"}
+                                          />
+
+                                      }
+
+
+
+
+
+                              />
+                          ),
+                      }}
+        />
         <Stack.Screen name={routes.Detail} component={DetailContainer} />
         <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer} />
 
@@ -146,7 +202,30 @@ const SafetyGlasses = ({ navigation }:Props): JSX.Element => (
 
 const SafetyVests = ({ navigation }:Props): JSX.Element => (
     <Stack.Navigator initialRouteName={routes.SafetyVests}>
-        <Stack.Screen name={routes.SafetyVests} component={SafetyVestsContainer} />
+        <Stack.Screen name={routes.SafetyVests} component={SafetyVestsContainer}
+                      options={{
+
+                          headerLeft: () => (
+                              <Button title={""}
+                                      type={"clear"}
+                                      onPress={ () => navigation.dispatch(DrawerActions.openDrawer())}
+                                      icon={
+                                          <Icon name={'bars'}
+                                                size={35}
+                                                type="font-awesome-5"
+                                                color={"black"}
+                                          />
+
+                                      }
+
+
+
+
+
+                              />
+                          ),
+                      }}
+        />
         <Stack.Screen name={routes.Detail} component={DetailContainer} />
         <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer} />
 
@@ -155,7 +234,30 @@ const SafetyVests = ({ navigation }:Props): JSX.Element => (
 
 const FallProtection = ({ navigation }:Props): JSX.Element => (
   <Stack.Navigator initialRouteName={routes.FallProtection} >
-      <Stack.Screen name={routes.FallProtection} component={FallProtectionContainer} />
+      <Stack.Screen name={routes.FallProtection} component={FallProtectionContainer}
+
+                    options={{
+
+                        headerLeft: () => (
+                            <Button title={""}
+                                    type={"clear"}
+                                    onPress={ () => navigation.dispatch(DrawerActions.openDrawer())}
+                                    icon={
+                                        <Icon name={'bars'}
+                                              size={35}
+                                              type="font-awesome-5"
+                                              color={"black"}
+                                        />
+
+                                    }
+
+
+
+
+
+                            />
+                        ),
+                    }} />
       <Stack.Screen name={routes.Detail} component={DetailContainer} />
       <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer} />
 
@@ -164,7 +266,30 @@ const FallProtection = ({ navigation }:Props): JSX.Element => (
 
 const HearingProtection = ({ navigation }:Props): JSX.Element => (
   <Stack.Navigator initialRouteName={routes.HearingProtection} >
-      <Stack.Screen name={routes.HearingProtection} component={HearingProtectionContainer} />
+      <Stack.Screen name={routes.HearingProtection} component={HearingProtectionContainer}
+                    options={{
+
+                        headerLeft: () => (
+                            <Button title={""}
+                                    type={"clear"}
+                                    onPress={ () => navigation.dispatch(DrawerActions.openDrawer())}
+                                    icon={
+                                        <Icon name={'bars'}
+                                              size={35}
+                                              type="font-awesome-5"
+                                              color={"black"}
+                                        />
+
+                                    }
+
+
+
+
+
+                            />
+                        ),
+                    }}
+      />
       <Stack.Screen name={routes.Detail} component={DetailContainer} />
       <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer} />
   </Stack.Navigator>
@@ -172,25 +297,71 @@ const HearingProtection = ({ navigation }:Props): JSX.Element => (
 
 const HardHats = ({ navigation }:Props): JSX.Element => (
   <Stack.Navigator initialRouteName={routes.HardHats}  >
-      <Stack.Screen name={routes.HardHats} component={HardHatsContainer} />
+      <Stack.Screen name={routes.HardHats} component={HardHatsContainer}
+                    options={{
+
+                        headerLeft: () => (
+                            <Button title={""}
+                                    type={"clear"}
+                                    onPress={ () => navigation.dispatch(DrawerActions.openDrawer())}
+                                    icon={
+                                        <Icon name={'bars'}
+                                              size={35}
+                                              type="font-awesome-5"
+                                              color={"black"}
+                                        />
+
+                                    }
+
+
+
+
+
+                            />
+                        ),
+                    }}
+      />
       <Stack.Screen name={routes.Detail} component={DetailContainer} />
       <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer} />
 
   </Stack.Navigator>
 );
 
-const Orders = (): JSX.Element => (
+const Orders = ({ navigation }:Props): JSX.Element => (
   <Stack.Navigator initialRouteName={routes.Cart}>
-    <Stack.Screen name={routes.Cart} component={CartContainer} />
+    <Stack.Screen name={routes.Cart} component={CartContainer}
+                  options={{
+
+                      headerLeft: () => (
+                          <Button title={""}
+                                  type={"clear"}
+                                  onPress={ () => navigation.dispatch(DrawerActions.openDrawer())}
+                                  icon={
+                                      <Icon name={'bars'}
+                                            size={35}
+                                            type="font-awesome-5"
+                                            color={"black"}
+                                      />
+
+                                  }
+
+
+
+
+
+                          />
+                      ),
+                  }}
+    />
     <Stack.Screen name={routes.Checkout} component={CheckoutContainer} />
   </Stack.Navigator>
 );
 
-// const tabIcons = {
-//   [routes.Browse]: 'shopping-bag',
-//   [routes.Orders]: 'shopping-cart',
-//   [routes.Categories]: 'bars'
-// };
+const tabIcons = {
+  // [routes.Browse]: 'shopping-bag',
+  [routes.Orders]: 'shopping-cart',
+  [routes.Browse]: 'bars'
+};
 
 const Navigation = (): JSX.Element => (
     // <Drawer.Navigator initialRouteName="Shop">
