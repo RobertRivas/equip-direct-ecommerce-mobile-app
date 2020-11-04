@@ -39,7 +39,7 @@ interface Props {
 export const routes = {
   Browse: 'Browse',
   Shop: 'Shop',
-  Categories: 'Categories',
+  // Categories: 'Categories',
     LibertyGloves: 'Liberty Gloves',
     SafetyGlasses: 'Safety Glasses',
     SafetyVests: 'Safety Vests',
@@ -102,35 +102,44 @@ const Browse = ({ navigation }:Props): JSX.Element => (
             />
         ),
     }} />
-    <Stack.Screen name={routes.Detail} component={DetailContainer}
-    options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
-      <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer}
-                    options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
+    <Stack.Screen name={routes.Detail} component={DetailContainer}/>
+      <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer} />
 
   </Stack.Navigator>
 );
 
-const Detail =(): JSX.Element => (
-    <Stack.Navigator initialRouteName={routes.Detail} >
-        <Stack.Screen name={routes.Detail} component={DetailContainer}/>
+// const Detail =({ navigation }:Props): JSX.Element => (
+//     <Stack.Navigator initialRouteName={routes.Detail} >
+//         <Stack.Screen name={routes.Detail} component={DetailContainer}/>
+//         <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer}/>
+//
+//         </Stack.Navigator>
+// );
+//
+// const VariationDetail =({ navigation }:Props): JSX.Element => (
+//     <Stack.Navigator initialRouteName={routes.Detail} >
+//         {/*<Stack.Screen name={routes.Detail} component={DetailContainer}/>*/}
+//         <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer}
+//                       options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
+//
+//     </Stack.Navigator>
+// );
 
-        </Stack.Navigator>
-);
 
 const LibertyGloves = ({ navigation }:Props): JSX.Element => (
   <Stack.Navigator initialRouteName={routes.LibertyGloves}>
       {/*<Stack.Screen name={routes.Categories} component={CategoriesContainer} />*/}
       <Stack.Screen name={routes.LibertyGloves} component={LibertyGlovesContainer} />
-      <Stack.Screen name={routes.Detail} component={DetailContainer}
-                    options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
+      <Stack.Screen name={routes.Detail} component={DetailContainer} />
+      <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer} />
   </Stack.Navigator>
 );
 
 const SafetyGlasses = ({ navigation }:Props): JSX.Element => (
     <Stack.Navigator initialRouteName={routes.SafetyGlasses}>
         <Stack.Screen name={routes.SafetyGlasses} component={SafetyGlassesContainer} />
-        <Stack.Screen name={routes.Detail} component={DetailContainer}
-                      options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
+        <Stack.Screen name={routes.Detail} component={DetailContainer} />
+        <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer} />
 
     </Stack.Navigator>
 );
@@ -138,8 +147,8 @@ const SafetyGlasses = ({ navigation }:Props): JSX.Element => (
 const SafetyVests = ({ navigation }:Props): JSX.Element => (
     <Stack.Navigator initialRouteName={routes.SafetyVests}>
         <Stack.Screen name={routes.SafetyVests} component={SafetyVestsContainer} />
-        <Stack.Screen name={routes.Detail} component={DetailContainer}
-                      options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
+        <Stack.Screen name={routes.Detail} component={DetailContainer} />
+        <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer} />
 
     </Stack.Navigator>
 );
@@ -147,7 +156,8 @@ const SafetyVests = ({ navigation }:Props): JSX.Element => (
 const FallProtection = ({ navigation }:Props): JSX.Element => (
   <Stack.Navigator initialRouteName={routes.FallProtection} >
       <Stack.Screen name={routes.FallProtection} component={FallProtectionContainer} />
-      <Stack.Screen name={routes.Detail} component={DetailContainer}/>
+      <Stack.Screen name={routes.Detail} component={DetailContainer} />
+      <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer} />
 
   </Stack.Navigator>
 );
@@ -155,16 +165,16 @@ const FallProtection = ({ navigation }:Props): JSX.Element => (
 const HearingProtection = ({ navigation }:Props): JSX.Element => (
   <Stack.Navigator initialRouteName={routes.HearingProtection} >
       <Stack.Screen name={routes.HearingProtection} component={HearingProtectionContainer} />
-      <Stack.Screen name={routes.Detail} component={DetailContainer}
-                    options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
+      <Stack.Screen name={routes.Detail} component={DetailContainer} />
+      <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer} />
   </Stack.Navigator>
 );
 
 const HardHats = ({ navigation }:Props): JSX.Element => (
   <Stack.Navigator initialRouteName={routes.HardHats}  >
       <Stack.Screen name={routes.HardHats} component={HardHatsContainer} />
-      <Stack.Screen name={routes.Detail} component={DetailContainer}
-                    options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
+      <Stack.Screen name={routes.Detail} component={DetailContainer} />
+      <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer} />
 
   </Stack.Navigator>
 );
@@ -183,7 +193,8 @@ const Orders = (): JSX.Element => (
 // };
 
 const Navigation = (): JSX.Element => (
-    <Drawer.Navigator initialRouteName="Shop">
+    // <Drawer.Navigator initialRouteName="Shop">
+    <Drawer.Navigator  >
         <Drawer.Screen name={routes.Browse} component={Browse}  />
         <Drawer.Screen name={routes.Orders} component={Orders} />
 

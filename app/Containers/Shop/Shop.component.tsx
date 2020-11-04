@@ -27,7 +27,7 @@ const _renderProduct = (props: Props) => ({
     JSX.Element => <ProductItem {...props} product={item} isInCart={false} />;
 console.log(ProductItem)
 const _renderEmpty = (): JSX.Element => (
-  <Text style={styles.textEmpty}>No available product at the moment</Text>
+  <Text style={styles.textEmpty}>Please wait while products load :) </Text>
 
 );
 

@@ -111,76 +111,106 @@ class DetailComponent extends PureComponent<Props> {
         attributes,
         sku
     } = product;
+      if(product.variations.length != 0) {
+        return (
+            <ScrollView style={styles.wrapper}>
+              <Carousel
+                  ref={this._setCarousel}
+                  sliderWidth={screenWidth}
+                  sliderHeight={screenWidth}
+                  itemWidth={screenWidth - 60}
+                  data={this._mapImages(images)}
+                  renderItem={this._renderImageItem(handleShowImages)}
+                  hasParallaxImages
+              />
+              <View style={styles.detail}>
+                <Text style={styles.textTitle}>{name}</Text>
+                <Text style={styles.textPrice}>{toAmount(price)}</Text>
+                <Text style={styles.textPrice}>{sku}</Text>
+                {/*need to  call handle product press to navigate to detail of variation the variation json object is same as product json object. */}
 
-    return (
-        <ScrollView style={styles.wrapper}>
-          <Carousel
-              ref={this._setCarousel}
-              sliderWidth={screenWidth}
-              sliderHeight={screenWidth}
-              itemWidth={screenWidth - 60}
-              data={this._mapImages(images)}
-              renderItem={this._renderImageItem(handleShowImages)}
-              hasParallaxImages
-          />
-          <View style={styles.detail}>
-            <Text style={styles.textTitle}>{name}</Text>
-            <Text style={styles.textPrice}>{toAmount(price)}</Text>
-            <Text style={styles.textPrice}>{sku}</Text>
-            {/*need to  call handle product press to navigate to detail of variation the variation json object is same as product json object. */}
+                <Picker style={{width: 250}} mode={"dropdown"}
+                        onValueChange={(itemValue): void => handleVariationPress(parseFloat(itemValue.toString()))}>
 
-            <Picker style={{width:250}} mode={"dropdown"} onValueChange={(itemValue): void => handleVariationPress(parseFloat(itemValue.toString()))}>
+                  {/*  <Picker style={{width:250}} mode={"dropdown"} onValueChange={(itemValue,itemIndex): void => handleProductPress(parseInt(itemValue.toString()))}>*/}
 
-            {/*  <Picker style={{width:250}} mode={"dropdown"} onValueChange={(itemValue,itemIndex): void => handleProductPress(parseInt(itemValue.toString()))}>*/}
+                  {/*<Picker style={{width:250}} mode={"dropdown"} selectedValue={(): void => handleProductPress("103211")}>*/}
+                  <Picker.Item color={"blue"} label={attributes[0].name.toString()} value={""}/>
+                  {console.log(product)}
+                  {console.log(product.variations)}
+                  {console.log(attributes)}
+                  {console.log(attributes)}
+                  {console.log(product.attributes)}
+                  {console.log(attributes[0].options)}
+                  {console.log(product.attributes[0].name)}
 
-            {/*<Picker style={{width:250}} mode={"dropdown"} selectedValue={(): void => handleProductPress("103211")}>*/}
-                <Picker.Item color={"blue"} label={attributes[0].name.toString()} value={""}/>
-              {console.log(product)}
-                {console.log(product.variations)}
-              {console.log(attributes)}
-              {console.log(attributes)}
-              {console.log(product.attributes)}
-              {console.log(attributes[0].options)}
-              {console.log(product.attributes[0].name)}
+                  {
+                    product.variations.map((item, index) => {
+                          console.log(item)
+                          console.log(index)
+                          console.log(sku)
 
-                {
-                  product.variations.map((item, index) => {
-                    console.log(item)
-                    console.log(index)
-                    console.log(sku)
+                          return (
 
-                    return(
+                              <Picker.Item label={attributes[0].options[index].toString()} value={item} key={index}/>
 
-                        <Picker.Item label={attributes[0].options[index].toString()} value={item} key={index} />
+                          )
+                        }
+                    )
+                  }
 
-                        )
-                      }
-                  )
-                }
-
-            </Picker>
-            <HTML html={description} textSelectable />
-            <View style={styles.rating}>
-              <Text style={styles.textSubHeading}>Rating:</Text>
-              <Text style={styles.textRating}>{rating}</Text>
-              <Rating readonly imageSize={20} startingValue={Number(rating)} />
-            </View>
-            <Button
-                icon={{
-                  name: 'cart-plus',
-                  type: 'font-awesome-5',
-                  color: 'white',
-                  size: 16
-                }}
-                title="Add to cart"
-                onPress={(): void => addToCart(product)}
-            />
-          </View>
-          <Modal visible={imagesShown} transparent>
-            {this._renderImages(images, handleShowImages)}
-          </Modal>
-        </ScrollView>
-    );
+                </Picker>
+                <HTML html={description} textSelectable/>
+                <View style={styles.rating}>
+                  <Text style={styles.textSubHeading}>Rating:</Text>
+                  <Text style={styles.textRating}>{rating}</Text>
+                  <Rating readonly imageSize={20} startingValue={Number(rating)}/>
+                </View>
+              </View>
+              <Modal visible={imagesShown} transparent>
+                {this._renderImages(images, handleShowImages)}
+              </Modal>
+            </ScrollView>
+        );
+      } else {
+        return (
+            <ScrollView style={styles.wrapper}>
+              <Carousel
+                  ref={this._setCarousel}
+                  sliderWidth={screenWidth}
+                  sliderHeight={screenWidth}
+                  itemWidth={screenWidth - 60}
+                  data={this._mapImages(images)}
+                  renderItem={this._renderImageItem(handleShowImages)}
+                  hasParallaxImages
+              />
+              <View style={styles.detail}>
+                <Text style={styles.textTitle}>{name}</Text>
+                <Text style={styles.textPrice}>{toAmount(price)}</Text>
+                <Text style={styles.textPrice}>{sku}</Text>
+                <HTML html={description} textSelectable/>
+                <View style={styles.rating}>
+                  <Text style={styles.textSubHeading}>Rating:</Text>
+                  <Text style={styles.textRating}>{rating}</Text>
+                  <Rating readonly imageSize={20} startingValue={Number(rating)}/>
+                </View>
+                <Button
+                    icon={{
+                      name: 'cart-plus',
+                      type: 'font-awesome-5',
+                      color: 'white',
+                      size: 16
+                    }}
+                    title="Add to cart"
+                    onPress={(): void => addToCart(product)}
+                />
+              </View>
+              <Modal visible={imagesShown} transparent>
+                {this._renderImages(images, handleShowImages)}
+              </Modal>
+            </ScrollView>
+        );
+      }
   }
 }
 
