@@ -18,7 +18,7 @@ import {
 
 
 import ShopContainer from '../Containers/Shop/Shop.container';
-// import CategoriesContainer from '../Containers/categoryDisplay/Categories.container';
+
 import LibertyGlovesContainer from '../Containers/LibertyGloves/LibertyGloves.container';
 import SafetyGlassesContainer from '../Containers/SafetyGlasses/SafetyGlasses.container';
 import SafetyVestsContainer from "../Containers/SafetyVests/SafetyVests.container";
@@ -30,7 +30,10 @@ import DetailContainer from '../Containers/Detail/Detail.container';
 import VariationDetailContainer from "../Containers/VariationDetail/VariationDetail.container";
 import CheckoutContainer from '../Containers/Checkout/Checkout.container';
 
-import {Picker} from '@react-native-community/picker';
+import AboutContainer from "../Containers/About/About.container";
+import ContactContainer from "../Containers/Contact/Contact.container";
+
+
 
 interface Props {
     navigation: StackNavigationProp<NavigationParams>;
@@ -39,7 +42,6 @@ interface Props {
 export const routes = {
   Browse: 'Browse',
   Shop: 'Shop',
-  // Categories: 'Categories',
     LibertyGloves: 'Liberty Gloves',
     SafetyGlasses: 'Safety Glasses',
     SafetyVests: 'Safety Vests',
@@ -50,7 +52,10 @@ export const routes = {
     VariationDetail: 'VariationDetail',
   Orders: 'Orders',
   Cart: 'Cart',
-  Checkout: 'Checkout'
+  Checkout: 'Checkout',
+    About: 'About',
+    Contact: 'Contact'
+
 };
 
 export type NavigationParams = {
@@ -74,6 +79,8 @@ export type NavigationParams = {
   };
   Cart: undefined;
   Checkout: undefined;
+  About: undefined;
+  Contact: undefined;
 
 
 };
@@ -83,7 +90,6 @@ export type NavigationParams = {
 
 
 const Stack = createStackNavigator();
-// const Tab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
 
 
@@ -118,22 +124,6 @@ const Browse = ({ navigation }:Props): JSX.Element => (
   </Stack.Navigator>
 );
 
-// const Detail =({ navigation }:Props): JSX.Element => (
-//     <Stack.Navigator initialRouteName={routes.Detail} >
-//         <Stack.Screen name={routes.Detail} component={DetailContainer}/>
-//         <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer}/>
-//
-//         </Stack.Navigator>
-// );
-//
-// const VariationDetail =({ navigation }:Props): JSX.Element => (
-//     <Stack.Navigator initialRouteName={routes.Detail} >
-//         {/*<Stack.Screen name={routes.Detail} component={DetailContainer}/>*/}
-//         <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer}
-//                       options={{headerLeft:()=>(<HeaderBackButton onPress={()=>navigation.goBack()}/>)}}/>
-//
-//     </Stack.Navigator>
-// );
 
 
 const LibertyGloves = ({ navigation }:Props): JSX.Element => (
@@ -357,15 +347,67 @@ const Orders = ({ navigation }:Props): JSX.Element => (
   </Stack.Navigator>
 );
 
-const tabIcons = {
-  // [routes.Browse]: 'shopping-bag',
-  [routes.Orders]: 'shopping-cart',
-  [routes.Browse]: 'bars'
-};
+const About = ({ navigation }:Props): JSX.Element => (
+
+    <Stack.Navigator initialRouteName={routes.About}>
+        <Stack.Screen name={routes.About} component={AboutContainer} options={{
+
+    headerLeft: () => (
+        <Button title={""}
+                type={"clear"}
+                onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+                icon={
+                    <Icon name={'bars'}
+                          size={35}
+                          type="font-awesome-5"
+                          color={"black"}
+                    />
+
+                }
+
+
+        />
+    ),
+}}/>
+
+    </Stack.Navigator>
+);
+
+const Contact = ({ navigation }:Props): JSX.Element => (
+
+    <Stack.Navigator initialRouteName={routes.Contact}>
+        <Stack.Screen name={routes.Contact} component={ContactContainer} options={{
+
+    headerLeft: () => (
+        <Button title={""}
+                type={"clear"}
+                onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+                icon={
+                    <Icon name={'bars'}
+                          size={35}
+                          type="font-awesome-5"
+                          color={"black"}
+                    />
+
+                }
+
+
+        />
+    ),
+}}/>
+
+    </Stack.Navigator>
+);
+
+// const tabIcons = {
+//   // [routes.Browse]: 'shopping-bag',
+//   [routes.Orders]: 'shopping-cart',
+//   [routes.Browse]: 'bars'
+// };
 
 const Navigation = (): JSX.Element => (
     // <Drawer.Navigator initialRouteName="Shop">
-    <Drawer.Navigator  >
+    <Drawer.Navigator >
         <Drawer.Screen name={routes.Browse} component={Browse}  />
         <Drawer.Screen name={routes.Orders} component={Orders} />
 
@@ -377,7 +419,10 @@ const Navigation = (): JSX.Element => (
         <Drawer.Screen name={routes.FallProtection} component={FallProtection} />
         <Drawer.Screen name={routes.HearingProtection} component={HearingProtection} />
         <Drawer.Screen name={routes.HardHats} component={HardHats} />
-    </Drawer.Navigator>);
+        <Drawer.Screen name={routes.About} component={About} />
+        <Drawer.Screen name={routes.Contact} component={Contact} />
+    </Drawer.Navigator>
+);
 
 //   <Tab.Navigator
 //     screenOptions={({ route }): object => ({
