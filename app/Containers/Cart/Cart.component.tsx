@@ -36,7 +36,7 @@ const _renderProduct = (props: Props) => ({
 );
 
 const _renderEmpty = (): JSX.Element => (
-  <Text style={styles.textEmpty}>There is no item in your cart</Text>
+  <Text style={styles.textEmpty}>There are no items in your cart :)</Text>
 );
 
 const Cart = (props: Props): JSX.Element => {

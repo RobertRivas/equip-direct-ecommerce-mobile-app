@@ -59,8 +59,7 @@ const DetailContainer = ({ navigation }: Props): JSX.Element => {
     <DetailComponent
       {...handlers}
       imagesShown={imagesShown}
-      product={product}
-    />
+      product={product}></DetailComponent>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon, Button } from 'react-native-elements';
+import { Icon, Button, SearchBar } from 'react-native-elements';
 import {createStackNavigator, StackNavigationProp, HeaderBackButton } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator } from '@react-navigation/drawer';
@@ -408,6 +408,7 @@ const Contact = ({ navigation }:Props): JSX.Element => (
 const Navigation = (): JSX.Element => (
     // <Drawer.Navigator initialRouteName="Shop">
     <Drawer.Navigator >
+
         <Drawer.Screen name={routes.Browse} component={Browse}  />
         <Drawer.Screen name={routes.Orders} component={Orders} />
 

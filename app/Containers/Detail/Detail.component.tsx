@@ -35,7 +35,7 @@ const { width: screenWidth } = Dimensions.get('window');
 
 interface Props {
   product: Product;
-  variation: Variation;
+  // variation: Variation;
   handleShowImages: () => void;
   imagesShown: boolean;
   addToCart?: (product: Product) => void;
@@ -126,7 +126,8 @@ class DetailComponent extends PureComponent<Props> {
               <View style={styles.detail}>
                 <Text style={styles.textTitle}>{name}</Text>
                 <Text style={styles.textPrice}>{toAmount(price)}</Text>
-                <Text style={styles.textPrice}>{sku}</Text>
+                <Text style={styles.textSku}>{sku}</Text>
+
                 {/*need to  call handle product press to navigate to detail of variation the variation json object is same as product json object. */}
 
                 <Picker style={{width: 250}} mode={"dropdown"}
@@ -134,21 +135,14 @@ class DetailComponent extends PureComponent<Props> {
 
                   {/*  <Picker style={{width:250}} mode={"dropdown"} onValueChange={(itemValue,itemIndex): void => handleProductPress(parseInt(itemValue.toString()))}>*/}
 
+                  {console.log(product.attributes[0].name)}
                   {/*<Picker style={{width:250}} mode={"dropdown"} selectedValue={(): void => handleProductPress("103211")}>*/}
                   <Picker.Item color={"blue"} label={attributes[0].name.toString()} value={""}/>
-                  {console.log(product)}
-                  {console.log(product.variations)}
-                  {console.log(attributes)}
-                  {console.log(attributes)}
-                  {console.log(product.attributes)}
-                  {console.log(attributes[0].options)}
-                  {console.log(product.attributes[0].name)}
+
 
                   {
                     product.variations.map((item, index) => {
-                          console.log(item)
-                          console.log(index)
-                          console.log(sku)
+
 
                           return (
 
@@ -187,7 +181,7 @@ class DetailComponent extends PureComponent<Props> {
               <View style={styles.detail}>
                 <Text style={styles.textTitle}>{name}</Text>
                 <Text style={styles.textPrice}>{toAmount(price)}</Text>
-                <Text style={styles.textPrice}>{sku}</Text>
+                <Text style={styles.textSku}>{sku}</Text>
                 <HTML html={description} textSelectable/>
                 <View style={styles.rating}>
                   <Text style={styles.textSubHeading}>Rating:</Text>
@@ -220,6 +214,7 @@ interface Styles {
   textTitle: ViewStyle;
   rating: ViewStyle;
   textPrice: ViewStyle;
+  textSku: ViewStyle;
   textSubHeading: ViewStyle;
   textRating: ViewStyle;
   item: ViewStyle;
@@ -241,6 +236,7 @@ const styles = StyleSheet.create<Styles>({
   },
   rating: { flexDirection: 'row', alignItems: 'center' },
   textPrice: { fontSize: 18, fontWeight: 'bold', color: '#006db3' },
+  textSku: { fontSize: 24, fontWeight: 'bold', color: '#000000' },
   textSubHeading: { fontSize: 18, fontWeight: 'bold', margin: 5 },
   textRating: { fontSize: 18, margin: 5 },
   item: {
