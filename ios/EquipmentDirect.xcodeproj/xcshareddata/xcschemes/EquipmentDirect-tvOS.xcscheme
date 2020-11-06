@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "RNWCShop-tvOS.app"
-               BlueprintName = "RNWCShop-tvOS"
-               ReferencedContainer = "container:RNWCShop.xcodeproj">
+               BuildableName = "EquipmentDirect-tvOS.app"
+               BlueprintName = "EquipmentDirect-tvOS"
+               ReferencedContainer = "container:EquipmentDirect.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "RNWCShop-tvOSTests.xctest"
-               BlueprintName = "RNWCShop-tvOSTests"
-               ReferencedContainer = "container:RNWCShop.xcodeproj">
+               BuildableName = "EquipmentDirect-tvOSTests.xctest"
+               BlueprintName = "EquipmentDirect-tvOSTests"
+               ReferencedContainer = "container:EquipmentDirect.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "RNWCShop-tvOS.app"
-            BlueprintName = "RNWCShop-tvOS"
-            ReferencedContainer = "container:RNWCShop.xcodeproj">
+            BuildableName = "EquipmentDirect-tvOS.app"
+            BlueprintName = "EquipmentDirect-tvOS"
+            ReferencedContainer = "container:EquipmentDirect.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "RNWCShop-tvOS.app"
-            BlueprintName = "RNWCShop-tvOS"
-            ReferencedContainer = "container:RNWCShop.xcodeproj">
+            BuildableName = "EquipmentDirect-tvOS.app"
+            BlueprintName = "EquipmentDirect-tvOS"
+            ReferencedContainer = "container:EquipmentDirect.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

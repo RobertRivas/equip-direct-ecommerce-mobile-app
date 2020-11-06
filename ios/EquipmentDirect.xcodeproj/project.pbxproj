@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* RNWCShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNWCShopTests.m */; };
+		00E356F31AD99517003FC87E /* EquipmentDirectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* EquipmentDirectTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -15,11 +15,11 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* RNWCShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNWCShopTests.m */; };
-		6396D5BEC4E532A28A74F1E9 /* libPods-RNWCShop-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD7C3867C035E84649A1A66 /* libPods-RNWCShop-tvOS.a */; };
-		99350FFC4C8563C692894E2D /* libPods-RNWCShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF35DEE2FB25EDF46F24A92 /* libPods-RNWCShop.a */; };
-		E237327C9D6D385B0A50EB2B /* libPods-RNWCShop-RNWCShopTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14796BDCF69FA0DA92830CDF /* libPods-RNWCShop-RNWCShopTests.a */; };
-		E44D97751634B70FD187A096 /* libPods-RNWCShop-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2796ABEE7186BEA5C66F095F /* libPods-RNWCShop-tvOSTests.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* EquipmentDirectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* EquipmentDirectTests.m */; };
+		6396D5BEC4E532A28A74F1E9 /* libPods-EquipmentDirect-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD7C3867C035E84649A1A66 /* libPods-EquipmentDirect-tvOS.a */; };
+		99350FFC4C8563C692894E2D /* libPods-EquipmentDirect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF35DEE2FB25EDF46F24A92 /* libPods-EquipmentDirect.a */; };
+		E237327C9D6D385B0A50EB2B /* libPods-EquipmentDirect-EquipmentDirectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14796BDCF69FA0DA92830CDF /* libPods-EquipmentDirect-EquipmentDirectTests.a */; };
+		E44D97751634B70FD187A096 /* libPods-EquipmentDirect-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2796ABEE7186BEA5C66F095F /* libPods-EquipmentDirect-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,45 +28,45 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = RNWCShop;
+			remoteInfo = EquipmentDirect;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "RNWCShop-tvOS";
+			remoteInfo = "EquipmentDirect-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* RNWCShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNWCShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* EquipmentDirectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EquipmentDirectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* RNWCShopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNWCShopTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* RNWCShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNWCShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RNWCShop/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RNWCShop/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* EquipmentDirectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EquipmentDirectTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* EquipmentDirect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EquipmentDirect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = EquipmentDirect/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = EquipmentDirect/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RNWCShop/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNWCShop/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNWCShop/main.m; sourceTree = "<group>"; };
-		14796BDCF69FA0DA92830CDF /* libPods-RNWCShop-RNWCShopTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNWCShop-RNWCShopTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2117C6636770BC1A3A781B4C /* Pods-RNWCShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWCShop.release.xcconfig"; path = "Target Support Files/Pods-RNWCShop/Pods-RNWCShop.release.xcconfig"; sourceTree = "<group>"; };
-		25878E7326A41DBF49933ADB /* Pods-RNWCShop-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWCShop-tvOS.release.xcconfig"; path = "Target Support Files/Pods-RNWCShop-tvOS/Pods-RNWCShop-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		2796ABEE7186BEA5C66F095F /* libPods-RNWCShop-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNWCShop-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E47B1E0B4A5D006451C7 /* RNWCShop-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNWCShop-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* RNWCShop-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNWCShop-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CF35DEE2FB25EDF46F24A92 /* libPods-RNWCShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNWCShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DD7C3867C035E84649A1A66 /* libPods-RNWCShop-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNWCShop-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		83A0F1C639010F4527AAB34C /* Pods-RNWCShop-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWCShop-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-RNWCShop-tvOS/Pods-RNWCShop-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		AF3FDC86ADEC8F79953306C5 /* Pods-RNWCShop-RNWCShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWCShop-RNWCShopTests.release.xcconfig"; path = "Target Support Files/Pods-RNWCShop-RNWCShopTests/Pods-RNWCShop-RNWCShopTests.release.xcconfig"; sourceTree = "<group>"; };
-		B6FA6D14BB88BBF514F54EF1 /* Pods-RNWCShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWCShop.debug.xcconfig"; path = "Target Support Files/Pods-RNWCShop/Pods-RNWCShop.debug.xcconfig"; sourceTree = "<group>"; };
-		BFCAFFAD57494C9E3CFF7FEF /* Pods-RNWCShop-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWCShop-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RNWCShop-tvOSTests/Pods-RNWCShop-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E06B88F80AD3E255B261E9D5 /* Pods-RNWCShop-RNWCShopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWCShop-RNWCShopTests.debug.xcconfig"; path = "Target Support Files/Pods-RNWCShop-RNWCShopTests/Pods-RNWCShop-RNWCShopTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = EquipmentDirect/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EquipmentDirect/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EquipmentDirect/main.m; sourceTree = "<group>"; };
+		14796BDCF69FA0DA92830CDF /* libPods-EquipmentDirect-EquipmentDirectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EquipmentDirect-EquipmentDirectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2117C6636770BC1A3A781B4C /* Pods-EquipmentDirect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EquipmentDirect.release.xcconfig"; path = "Target Support Files/Pods-EquipmentDirect/Pods-EquipmentDirect.release.xcconfig"; sourceTree = "<group>"; };
+		25878E7326A41DBF49933ADB /* Pods-EquipmentDirect-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EquipmentDirect-tvOS.release.xcconfig"; path = "Target Support Files/Pods-EquipmentDirect-tvOS/Pods-EquipmentDirect-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		2796ABEE7186BEA5C66F095F /* libPods-EquipmentDirect-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EquipmentDirect-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* EquipmentDirect-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EquipmentDirect-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* EquipmentDirect-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EquipmentDirect-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CF35DEE2FB25EDF46F24A92 /* libPods-EquipmentDirect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EquipmentDirect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DD7C3867C035E84649A1A66 /* libPods-EquipmentDirect-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EquipmentDirect-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A0F1C639010F4527AAB34C /* Pods-EquipmentDirect-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EquipmentDirect-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-EquipmentDirect-tvOS/Pods-EquipmentDirect-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AF3FDC86ADEC8F79953306C5 /* Pods-EquipmentDirect-EquipmentDirectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EquipmentDirect-EquipmentDirectTests.release.xcconfig"; path = "Target Support Files/Pods-EquipmentDirect-EquipmentDirectTests/Pods-EquipmentDirect-EquipmentDirectTests.release.xcconfig"; sourceTree = "<group>"; };
+		B6FA6D14BB88BBF514F54EF1 /* Pods-EquipmentDirect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EquipmentDirect.debug.xcconfig"; path = "Target Support Files/Pods-EquipmentDirect/Pods-EquipmentDirect.debug.xcconfig"; sourceTree = "<group>"; };
+		BFCAFFAD57494C9E3CFF7FEF /* Pods-EquipmentDirect-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EquipmentDirect-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-EquipmentDirect-tvOSTests/Pods-EquipmentDirect-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E06B88F80AD3E255B261E9D5 /* Pods-EquipmentDirect-EquipmentDirectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EquipmentDirect-EquipmentDirectTests.debug.xcconfig"; path = "Target Support Files/Pods-EquipmentDirect-EquipmentDirectTests/Pods-EquipmentDirect-EquipmentDirectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F5DD95E69CAA9B7359D5E32C /* Pods-RNWCShop-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWCShop-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-RNWCShop-tvOSTests/Pods-RNWCShop-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5DD95E69CAA9B7359D5E32C /* Pods-EquipmentDirect-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EquipmentDirect-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-EquipmentDirect-tvOSTests/Pods-EquipmentDirect-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E237327C9D6D385B0A50EB2B /* libPods-RNWCShop-RNWCShopTests.a in Frameworks */,
+				E237327C9D6D385B0A50EB2B /* libPods-EquipmentDirect-EquipmentDirectTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99350FFC4C8563C692894E2D /* libPods-RNWCShop.a in Frameworks */,
+				99350FFC4C8563C692894E2D /* libPods-EquipmentDirect.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6396D5BEC4E532A28A74F1E9 /* libPods-RNWCShop-tvOS.a in Frameworks */,
+				6396D5BEC4E532A28A74F1E9 /* libPods-EquipmentDirect-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E44D97751634B70FD187A096 /* libPods-RNWCShop-tvOSTests.a in Frameworks */,
+				E44D97751634B70FD187A096 /* libPods-EquipmentDirect-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* RNWCShopTests */ = {
+		00E356EF1AD99517003FC87E /* EquipmentDirectTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* RNWCShopTests.m */,
+				00E356F21AD99517003FC87E /* EquipmentDirectTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = RNWCShopTests;
+			path = EquipmentDirectTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* RNWCShop */ = {
+		13B07FAE1A68108700A75B9A /* EquipmentDirect */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,7 +133,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = RNWCShop;
+			name = EquipmentDirect;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				4CF35DEE2FB25EDF46F24A92 /* libPods-RNWCShop.a */,
-				14796BDCF69FA0DA92830CDF /* libPods-RNWCShop-RNWCShopTests.a */,
-				4DD7C3867C035E84649A1A66 /* libPods-RNWCShop-tvOS.a */,
-				2796ABEE7186BEA5C66F095F /* libPods-RNWCShop-tvOSTests.a */,
+				4CF35DEE2FB25EDF46F24A92 /* libPods-EquipmentDirect.a */,
+				14796BDCF69FA0DA92830CDF /* libPods-EquipmentDirect-EquipmentDirectTests.a */,
+				4DD7C3867C035E84649A1A66 /* libPods-EquipmentDirect-tvOS.a */,
+				2796ABEE7186BEA5C66F095F /* libPods-EquipmentDirect-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,9 +159,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* RNWCShop */,
+				13B07FAE1A68108700A75B9A /* EquipmentDirect */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* RNWCShopTests */,
+				00E356EF1AD99517003FC87E /* EquipmentDirectTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				91B44038799CD114B6C9790E /* Pods */,
@@ -175,10 +175,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* RNWCShop.app */,
-				00E356EE1AD99517003FC87E /* RNWCShopTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* RNWCShop-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* RNWCShop-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* EquipmentDirect.app */,
+				00E356EE1AD99517003FC87E /* EquipmentDirectTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* EquipmentDirect-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* EquipmentDirect-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,14 +186,14 @@
 		91B44038799CD114B6C9790E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B6FA6D14BB88BBF514F54EF1 /* Pods-RNWCShop.debug.xcconfig */,
-				2117C6636770BC1A3A781B4C /* Pods-RNWCShop.release.xcconfig */,
-				E06B88F80AD3E255B261E9D5 /* Pods-RNWCShop-RNWCShopTests.debug.xcconfig */,
-				AF3FDC86ADEC8F79953306C5 /* Pods-RNWCShop-RNWCShopTests.release.xcconfig */,
-				83A0F1C639010F4527AAB34C /* Pods-RNWCShop-tvOS.debug.xcconfig */,
-				25878E7326A41DBF49933ADB /* Pods-RNWCShop-tvOS.release.xcconfig */,
-				BFCAFFAD57494C9E3CFF7FEF /* Pods-RNWCShop-tvOSTests.debug.xcconfig */,
-				F5DD95E69CAA9B7359D5E32C /* Pods-RNWCShop-tvOSTests.release.xcconfig */,
+				B6FA6D14BB88BBF514F54EF1 /* Pods-EquipmentDirect.debug.xcconfig */,
+				2117C6636770BC1A3A781B4C /* Pods-EquipmentDirect.release.xcconfig */,
+				E06B88F80AD3E255B261E9D5 /* Pods-EquipmentDirect-EquipmentDirectTests.debug.xcconfig */,
+				AF3FDC86ADEC8F79953306C5 /* Pods-EquipmentDirect-EquipmentDirectTests.release.xcconfig */,
+				83A0F1C639010F4527AAB34C /* Pods-EquipmentDirect-tvOS.debug.xcconfig */,
+				25878E7326A41DBF49933ADB /* Pods-EquipmentDirect-tvOS.release.xcconfig */,
+				BFCAFFAD57494C9E3CFF7FEF /* Pods-EquipmentDirect-tvOSTests.debug.xcconfig */,
+				F5DD95E69CAA9B7359D5E32C /* Pods-EquipmentDirect-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -210,9 +210,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* RNWCShopTests */ = {
+		00E356ED1AD99517003FC87E /* EquipmentDirectTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNWCShopTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "EquipmentDirectTests" */;
 			buildPhases = (
 				98AD038202B0B3F989BE1CDF /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -225,14 +225,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = RNWCShopTests;
-			productName = RNWCShopTests;
-			productReference = 00E356EE1AD99517003FC87E /* RNWCShopTests.xctest */;
+			name = EquipmentDirectTests;
+			productName = EquipmentDirectTests;
+			productReference = 00E356EE1AD99517003FC87E /* EquipmentDirectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* RNWCShop */ = {
+		13B07F861A680F5B00A75B9A /* EquipmentDirect */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNWCShop" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "EquipmentDirect" */;
 			buildPhases = (
 				2E927C520B97594E26E3C226 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -246,14 +246,14 @@
 			);
 			dependencies = (
 			);
-			name = RNWCShop;
-			productName = RNWCShop;
-			productReference = 13B07F961A680F5B00A75B9A /* RNWCShop.app */;
+			name = EquipmentDirect;
+			productName = EquipmentDirect;
+			productReference = 13B07F961A680F5B00A75B9A /* EquipmentDirect.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* RNWCShop-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* EquipmentDirect-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RNWCShop-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "EquipmentDirect-tvOS" */;
 			buildPhases = (
 				9F1A611ADF05D1B6333D064D /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -266,14 +266,14 @@
 			);
 			dependencies = (
 			);
-			name = "RNWCShop-tvOS";
-			productName = "RNWCShop-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* RNWCShop-tvOS.app */;
+			name = "EquipmentDirect-tvOS";
+			productName = "EquipmentDirect-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* EquipmentDirect-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* RNWCShop-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* EquipmentDirect-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RNWCShop-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "EquipmentDirect-tvOSTests" */;
 			buildPhases = (
 				8811AE9807E5865DF65942D9 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -285,9 +285,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "RNWCShop-tvOSTests";
-			productName = "RNWCShop-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* RNWCShop-tvOSTests.xctest */;
+			name = "EquipmentDirect-tvOSTests";
+			productName = "EquipmentDirect-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* EquipmentDirect-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -316,7 +316,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RNWCShop" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "EquipmentDirect" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -329,10 +329,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* RNWCShop */,
-				00E356ED1AD99517003FC87E /* RNWCShopTests */,
-				2D02E47A1E0B4A5D006451C7 /* RNWCShop-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* RNWCShop-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* EquipmentDirect */,
+				00E356ED1AD99517003FC87E /* EquipmentDirectTests */,
+				2D02E47A1E0B4A5D006451C7 /* EquipmentDirect-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* EquipmentDirect-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -415,7 +415,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNWCShop-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EquipmentDirect-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -428,7 +428,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNWCShop-RNWCShopTests/Pods-RNWCShop-RNWCShopTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-EquipmentDirect-EquipmentDirectTests/Pods-EquipmentDirect-EquipmentDirectTests-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -467,7 +467,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNWCShop-RNWCShopTests/Pods-RNWCShop-RNWCShopTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EquipmentDirect-EquipmentDirectTests/Pods-EquipmentDirect-EquipmentDirectTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8811AE9807E5865DF65942D9 /* [CP] Check Pods Manifest.lock */ = {
@@ -485,7 +485,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNWCShop-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EquipmentDirect-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -498,7 +498,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNWCShop/Pods-RNWCShop-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-EquipmentDirect/Pods-EquipmentDirect-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -537,7 +537,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNWCShop/Pods-RNWCShop-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EquipmentDirect/Pods-EquipmentDirect-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		98AD038202B0B3F989BE1CDF /* [CP] Check Pods Manifest.lock */ = {
@@ -555,7 +555,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNWCShop-RNWCShopTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EquipmentDirect-EquipmentDirectTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -577,7 +577,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNWCShop-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EquipmentDirect-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -629,7 +629,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* RNWCShopTests.m in Sources */,
+				00E356F31AD99517003FC87E /* EquipmentDirectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,7 +655,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* RNWCShopTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* EquipmentDirectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,12 +664,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* RNWCShop */;
+			target = 13B07F861A680F5B00A75B9A /* EquipmentDirect */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* RNWCShop-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* EquipmentDirect-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -681,7 +681,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = RNWCShop;
+			path = EquipmentDirect;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -689,14 +689,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E06B88F80AD3E255B261E9D5 /* Pods-RNWCShop-RNWCShopTests.debug.xcconfig */;
+			baseConfigurationReference = E06B88F80AD3E255B261E9D5 /* Pods-EquipmentDirect-EquipmentDirectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = RNWCShopTests/Info.plist;
+				INFOPLIST_FILE = EquipmentDirectTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -706,17 +706,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNWCShop.app/RNWCShop";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EquipmentDirect.app/EquipmentDirect";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF3FDC86ADEC8F79953306C5 /* Pods-RNWCShop-RNWCShopTests.release.xcconfig */;
+			baseConfigurationReference = AF3FDC86ADEC8F79953306C5 /* Pods-EquipmentDirect-EquipmentDirectTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = RNWCShopTests/Info.plist;
+				INFOPLIST_FILE = EquipmentDirectTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -726,13 +726,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNWCShop.app/RNWCShop";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EquipmentDirect.app/EquipmentDirect";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6FA6D14BB88BBF514F54EF1 /* Pods-RNWCShop.debug.xcconfig */;
+			baseConfigurationReference = B6FA6D14BB88BBF514F54EF1 /* Pods-EquipmentDirect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -742,7 +742,7 @@
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
-				INFOPLIST_FILE = RNWCShop/Info.plist;
+				INFOPLIST_FILE = EquipmentDirect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -750,7 +750,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = RNWCShop;
+				PRODUCT_NAME = EquipmentDirect;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -759,12 +759,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2117C6636770BC1A3A781B4C /* Pods-RNWCShop.release.xcconfig */;
+			baseConfigurationReference = 2117C6636770BC1A3A781B4C /* Pods-EquipmentDirect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = RNWCShop/Info.plist;
+				INFOPLIST_FILE = EquipmentDirect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -772,7 +772,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = RNWCShop;
+				PRODUCT_NAME = EquipmentDirect;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -780,7 +780,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83A0F1C639010F4527AAB34C /* Pods-RNWCShop-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 83A0F1C639010F4527AAB34C /* Pods-EquipmentDirect-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -791,14 +791,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "RNWCShop-tvOS/Info.plist";
+				INFOPLIST_FILE = "EquipmentDirect-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.RNWCShop-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.EquipmentDirect-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -808,7 +808,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25878E7326A41DBF49933ADB /* Pods-RNWCShop-tvOS.release.xcconfig */;
+			baseConfigurationReference = 25878E7326A41DBF49933ADB /* Pods-EquipmentDirect-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -819,14 +819,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "RNWCShop-tvOS/Info.plist";
+				INFOPLIST_FILE = "EquipmentDirect-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.RNWCShop-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.EquipmentDirect-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -836,7 +836,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFCAFFAD57494C9E3CFF7FEF /* Pods-RNWCShop-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = BFCAFFAD57494C9E3CFF7FEF /* Pods-EquipmentDirect-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -846,24 +846,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "RNWCShop-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "EquipmentDirect-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.RNWCShop-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.EquipmentDirect-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNWCShop-tvOS.app/RNWCShop-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EquipmentDirect-tvOS.app/EquipmentDirect-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5DD95E69CAA9B7359D5E32C /* Pods-RNWCShop-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = F5DD95E69CAA9B7359D5E32C /* Pods-EquipmentDirect-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -873,17 +873,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "RNWCShop-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "EquipmentDirect-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.RNWCShop-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.EquipmentDirect-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNWCShop-tvOS.app/RNWCShop-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EquipmentDirect-tvOS.app/EquipmentDirect-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -1004,7 +1004,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNWCShopTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "EquipmentDirectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1013,7 +1013,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNWCShop" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "EquipmentDirect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1022,7 +1022,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RNWCShop-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "EquipmentDirect-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1031,7 +1031,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RNWCShop-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "EquipmentDirect-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1040,7 +1040,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RNWCShop" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "EquipmentDirect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
