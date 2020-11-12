@@ -1,9 +1,7 @@
 import React from 'react';
 import { FlatList, StyleSheet, Text, TextStyle, ViewStyle, Button } from 'react-native';
 
-// import { createDrawerNavigator } from '@react-navigation/drawer';
-//
-// const Drawer = createDrawerNavigator();
+
 
 import ProductItem, {
   Product
@@ -38,6 +36,7 @@ const Shop = (props: Props): JSX.Element => {
   const { products } = props;
 
   return (
+
     <FlatList
       contentContainerStyle={styles.container}
       data={products}

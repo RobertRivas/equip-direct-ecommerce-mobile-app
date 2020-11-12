@@ -32,7 +32,7 @@ import CheckoutContainer from '../Containers/Checkout/Checkout.container';
 
 import AboutContainer from "../Containers/About/About.container";
 import ContactContainer from "../Containers/Contact/Contact.container";
-
+import SearchContainer from "../Containers/Search/Search.container";
 
 
 interface Props {
@@ -54,7 +54,8 @@ export const routes = {
   Cart: 'Cart',
   Checkout: 'Checkout',
     About: 'About',
-    Contact: 'Contact'
+    Contact: 'Contact',
+    Search: 'Search'
 
 };
 
@@ -81,6 +82,7 @@ export type NavigationParams = {
   Checkout: undefined;
   About: undefined;
   Contact: undefined;
+  Search: undefined;
 
 
 };
@@ -396,8 +398,42 @@ const Contact = ({ navigation }:Props): JSX.Element => (
     ),
 }}/>
 
+
+
     </Stack.Navigator>
 );
+
+const Search = ({ navigation }:Props): JSX.Element => (
+
+    <Stack.Navigator initialRouteName={routes.Search}>
+        <Stack.Screen name={routes.Search} component={SearchContainer} options={{
+
+            headerLeft: () => (
+                <Button title={""}
+                        type={"clear"}
+                        onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+                        icon={
+                            <Icon name={'bars'}
+                                  size={35}
+                                  type="font-awesome-5"
+                                  color={"black"}
+                            />
+
+                        }
+
+
+                />
+            ),
+
+        }}/>
+
+        <Stack.Screen name={routes.Detail} component={DetailContainer} />
+        <Stack.Screen name={routes.VariationDetail} component={VariationDetailContainer} />
+
+
+    </Stack.Navigator>
+);
+
 
 // const tabIcons = {
 //   // [routes.Browse]: 'shopping-bag',
@@ -422,6 +458,7 @@ const Navigation = (): JSX.Element => (
         <Drawer.Screen name={routes.HardHats} component={HardHats} />
         <Drawer.Screen name={routes.About} component={About} />
         <Drawer.Screen name={routes.Contact} component={Contact} />
+        <Drawer.Screen name={routes.Search} component={Search} />
     </Drawer.Navigator>
 );
 
